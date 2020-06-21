@@ -8,12 +8,22 @@ const transporter = nodemailer.createTransport({
   }
 })
 
-exports.reminderEmail = (email, origin, destination) => {
+exports.setReminder = (email, origin, destination) => {
   const mailOptions = {
     from: process.env.DUMMY_EMAIL,
     to: email,
     subject: 'Reminder to Leave!',
-    text: `You should leave now from ${origin} to reach ${destination} in time!`,
+    html:`<div>
+            <div>
+              <p>Your <b>origin</b> place: <b>${origin}</b></p>
+            </div>
+            <div>
+              <p>Your <b>destination</b> place: <b>${destination}</b></p>
+            </div>
+            <div>
+              <p><b>It's time to leave now!</b></p>
+            </div>
+          </div>`
   }
 
   transporter.sendMail(mailOptions, (error, response) => {

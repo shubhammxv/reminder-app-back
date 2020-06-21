@@ -1,13 +1,10 @@
 const schedule = require('node-schedule');
-const { validationResult } = require('express-validator/check');
+const { validationResult } = require('express-validator');
 
 const emailJob = require('./email');
 
-exports.getStatus = (req, res, next) => {
-  res.status(200).json({ message: 'Server is Running!' });
-}
-
-exports.scheduleEmail = (req, res, next) => {
+exports.postSchedule = (req, res, next) => {
+  console.log("Schedule Data", req.body);
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     const error = new Error('Validation Failed.')
@@ -29,6 +26,6 @@ exports.scheduleEmail = (req, res, next) => {
 
   schedule.scheduleJob(sendTime, () => {
     console.log("Sending Email at", sendTime, email)
-    emailJob.reminderEmail(email, origin, destination);
+    emailJob.setReminder(email, origin, destination);
   })
 }
