@@ -17,7 +17,7 @@ DUMMY_EMAIL_PASSWORD = [DUMMY_EMAIL_PASSWORD] <br />
 PORT = 8080 <br />
 <br />
 <br />
-So clone other project in the directory <br />
+So clone this https://github.com/shubhammxv/reminder-app-front project in the another directory <br />
 And then go to that directory <br />
 Run <b>npm install</b> <br />
 Run <b>npm start</b> to start the project (Starts on Port 3000) <br />
