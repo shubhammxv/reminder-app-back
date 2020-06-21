@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 const reminderRoutes = require('./app/routes/reminder');
 
 const app = express();
@@ -23,6 +25,7 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 })
 
-console.log("Starting Server");
+const port = process.env.PORT || 8080
 
-app.listen(8080);
+console.log("Starting Server");
+app.listen(port, () => console.log("Server started at Port", port));
