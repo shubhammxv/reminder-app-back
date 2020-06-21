@@ -6,7 +6,7 @@ Starts server on [localhost:8080](https://localhost:8080/) <br />
 This project is acting as server side 
 for the project [Reminder Front-end](https://github.com/shubhammxv/reminder-app-front) <br />
 
-Create <b> .env </b> in the root folder of this directoryr<br />
+Create <b> .env </b> in the root folder of this directory<br />
 And enter the following key value pairs <br />
 
 GOOGLE_MATRIX_API = https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial </br>
