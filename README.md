@@ -7,5 +7,5 @@ for the project https://github.com/shubhammxv/reminder-app-front <br />
 <br />
 So clone other project in the directory <br />
 And then go to that directory <br />
-Run npm install <br />
-Run npm start to start the project (Starts on Port 3000) <br />
+Run <b>npm install</b> <br />
+Run <b>npm start</b> to start the project (Starts on Port 3000) <br />
