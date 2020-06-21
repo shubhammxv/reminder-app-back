@@ -1,7 +1,7 @@
 Clone [Reminder Back-end](https://github.com/shubhammxv/reminder-app-back) repository in a directory <br />
 And then go to that directory <br />
 Run <b>npm install</b> <br />
-Run <b>npm start</b> to start the server <br .<
+Run <b>npm start</b> to start the server <br />
 Starts server on [localhost:8080](https://localhost:8080/) <br />
 This project is acting as server side 
 for the project [Reminder Front-end](https://github.com/shubhammxv/reminder-app-front) <br />
