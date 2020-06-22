@@ -13,7 +13,7 @@ For UI side code, go [here](https://github.com/shubhammxv/reminder-app-front)
 
 #### Create .env file in root folder
 ```
-`<.env>` Variables
+.env Variables
 
 GOOGLE_MATRIX_API = https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial
 API_KEY = [YOUR_API_KEY]
