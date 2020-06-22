@@ -26,6 +26,6 @@ PORT = 8080
 # install dependencies
 $ npm install
 
-# launch server
+# launch server (localhost:8080)
 $ npm start
 ```
